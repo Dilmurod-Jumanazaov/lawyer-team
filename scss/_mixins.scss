@@ -1,0 +1,27 @@
+// flexbox mixin for placing elements.
+@mixin flexbox ($jc: space-between, $ai: center)  {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+// to remove redundant list styles for ul aand ol html tags
+@mixin list-remove {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+// mixin for pseudo elements 
+@mixin pseudo-element ($width,$height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+// for mixin responsive (media).
+@mixin media ($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}

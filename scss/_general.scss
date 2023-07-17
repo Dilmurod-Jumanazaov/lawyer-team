@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  height: auto;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  font-family: var(--main-font-family);
+}
+main {
+  flex-grow: 1;
+}
