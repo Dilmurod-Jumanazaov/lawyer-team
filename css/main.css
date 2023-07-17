@@ -1,12 +1,3 @@
-:root {
-  --main-font-family: "Open Sans" sans-serif;
-  --main-bold-fw: 700;
-  --main-semi-bold-fw: 600;
-  --main-green-color: #33836e;
-  --main-black-color: #140a32;
-  --main-white-color: #fff;
-}
-
 /* open-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
