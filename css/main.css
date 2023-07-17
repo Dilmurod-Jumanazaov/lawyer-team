@@ -332,6 +332,15 @@ template {
   display: none;
 }
 
+:root {
+  --main-font-family: "Open Sans", "Arial", sans-serif;
+  --main-bold-fw: 700;
+  --main-semi-bold-fw: 600;
+  --main-green-color: #33836e;
+  --main-black-color: #140a32;
+  --main-white-color: #fff;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

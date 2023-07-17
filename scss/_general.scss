@@ -1,3 +1,4 @@
+@use "variables" as v;
 * {
   box-sizing: border-box;
 }
@@ -12,7 +13,7 @@ body {
   display: flex;
   height: 100%;
   margin: 0;
-  font-family: var(--main-font-family);
+  font-family: v.$font-family;
 }
 main {
   flex-grow: 1;
