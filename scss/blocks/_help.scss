@@ -1,0 +1,122 @@
+@use "../mixins" as m;
+.help {
+}
+.help__title-wrap {
+  margin-bottom: 40px;
+}
+.help__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: var(--main-bold-fw);
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: var(--main-black-color);
+}
+.help__text {
+  margin: 0;
+  font-size: 11px;
+  line-height: 160%;
+  color: var(--main-black-color);
+}
+.help__text--first {
+  margin-bottom: 10px;
+}
+.help__subtitle-wrapper {
+  margin-bottom: 20px;
+}
+.help__subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: var(--main-bold-fw);
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: var(--main-black-color);
+}
+.help__desc {
+  margin: 0;
+  font-size: 11px;
+  line-height: 160%;
+  color: var(--main-black-color);
+}
+.help__list {
+  @include m.list-remove;
+  @include m.flexbox(space-evenly); 
+  margin-bottom: 10px;
+}
+.help__list--second {
+  margin-bottom: 0;
+}
+.help__item {
+  display: flex;
+  align-items: center;
+  max-width: 175px;
+  width: 100%;
+  // min-height: 100%;
+  margin-right: 10px;
+  padding: 20px;
+  border: 1px solid rgba(47, 43, 67, 0.15);
+  border-radius: 20px;
+}
+.help__item:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+}
+.help__info-box {
+}
+.help__info-box::before {
+  @include m.pseudo-element(24px,24px);
+  background-image: url("/images/phonegreen.svg");
+}
+.help__info-box--second::before {
+  @include m.pseudo-element(24px,24px);
+  background-image: url("/images/reply.svg");
+}
+.help__info-box--three::before {
+  @include m.pseudo-element(24px,24px);
+  background-image: url("/images/chatlines.svg");
+}
+.help__info-box--four::before {
+  @include m.pseudo-element(24px,24px);
+  background-image: url("/images/building.svg");
+}
+.help__item-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  line-height: normal;
+  color: var(--main-black-color);
+}
+.help__phone-number {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: var(--main-bold-fw);
+  font-size: 11px;
+  line-height: normal;
+  color: var(--main-black-color);
+  text-decoration: none;
+}
+.help__item-link {
+  display: inline-block;
+  font-size: 11px;
+  line-height: normal;
+  color: var(--main-green-color);
+  text-decoration: none;
+}
+.help-item-text {
+}
+@include m.media (320px) {
+  .help__info-box {
+    max-width: 135px;
+    width: 100%;
+  }
+}
+@include m.media (375px) {
+  .help__title {
+    font-size: 20px;
+  }
+  .help__text {
+    font-size: 14px;
+  }
+}
