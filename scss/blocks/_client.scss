@@ -1,0 +1,60 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+// .client {
+// }
+.client__inner {
+    @include m.flexbox;
+    flex-direction: column;
+}
+.client__title {
+    color: var(--base-black);
+    font-family: var(--main-font-family);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+.client__list-wrap {
+    max-width: 85vw;
+    width: 100%;
+    margin: 0 auto;
+}
+.client__list {
+    @include m.flexbox;
+    flex-direction: row;
+    @include m.list-remove;
+}
+.client__item {
+    max-width: 280px;
+    width: 100%;
+}
+// .client__name-box {
+
+// }
+.client__name {
+    margin: 0;
+    color: var(--base-black);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.client__time {
+    color: var(--gray-medium);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+// .client__idea-box {
+// }
+// .client__idea {
+// }
+// .client__questions {
+// }
+// .client__idea-sec {
+// }

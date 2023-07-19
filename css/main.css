@@ -339,6 +339,8 @@ template {
   --main-green-color: #33836e;
   --main-black-color: #140a32;
   --main-white-color: #fff;
+  --base-black:#140a32;
+  --gray-medium:#2f2b4380;
 }
 
 * {
@@ -359,6 +361,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: var(--main-font-family);
@@ -389,4 +395,79 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.client__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client__title {
+  color: var(--base-black);
+  font-family: var(--main-font-family);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.client__list-wrap {
+  max-width: 85vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.client__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.client__item {
+  max-width: 280px;
+  width: 100%;
+}
+
+.client__name {
+  margin: 0;
+  color: var(--base-black);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.client__time {
+  color: var(--gray-medium);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */
