@@ -9,7 +9,6 @@
 
 .lawyer__title {
   @include m.default-text(20px, 19px, 700);
-  // font-size: 20px;
   letter-spacing: -0.6px;
 }
 
@@ -81,7 +80,8 @@
   }
   
   .lawyer__title {
-    @include m.default-text(25px, 26px, 700);
+    margin-bottom: 25px;
+    font-size: 26px;
   }
   
   .lawyer__list-wrapper {
@@ -95,11 +95,12 @@
   }
   
   .lawyer__subtitle {
-    @include m.default-text(0, 15px, 600);
+    font-size: 15px;
   }
   
   .lawyer__desc {
-    @include m.default-text(0, 13px, $lh:19px);
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -119,12 +120,13 @@
   }
 
   .lawyer__title {
-    @include m.default-text(30px, 32px, 700);
+    margin-bottom: 30px;
+    font-size: 32px;
   }
 
   .lawyer__item {
     max-width: calc(50% - 10px);
-    min-width: auto;
+    min-height: auto;
   }
 
   .lawyer__subtitle--building::before {
@@ -162,11 +164,12 @@
   }
 
   .lawyer__subtitle {
-    @include m.default-text(0, 16px, 600);
+    font-size: 16px;
   }
   
   .lawyer__desc {
-    @include m.default-text(0, 14px, $lh:21px);
+    font-size: 14px;
+    line-height: 21px;
   } 
 }
 /* Section lawyer styles finished */
