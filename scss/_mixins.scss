@@ -1,5 +1,5 @@
 // flexbox mixin for placing elements.
-@mixin flexbox ($jc: space-between, $ai: center)  {
+@mixin flexbox ($jc: flex-start, $ai: stretch)  {
   display: flex;
   justify-content: $jc;
   align-items: $ai;
