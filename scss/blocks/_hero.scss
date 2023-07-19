@@ -18,3 +18,28 @@
 .services {
   display: none;
 }
+
+// <div class="free__title-wrapper">
+//             <h2 class="free__title">Задайте вопрос юристу бесплатно</h2>
+//           </div>
+//           <div class="free__content">
+//             <div class="free__conditions">
+//               <form class="free__form" action="https://echo.htmlacademy.ru/courses" method="POST">
+//                 <div class="free__form-inner">
+//                   <label class="free__label" for="user_numbar">Номер телефона</label>
+//                   <input class="free__input" type="tel" name="user_numbar" minlength="7" maxlength="15"  aria-label="Номер телефона" required>
+//                 </div>
+//                 <button class="free__btn" type="submit">Задать вопрос юристу</button>
+//               </form>
+//               <p class="free__desc">
+//                 Отправляя вопрос, вы соглашаетесь с условиями
+//                 <a class="free__desc-link" href="https://100yuristov.com/site/offer/">Пользовательского соглашения</a>
+//               </p>
+//             </div>
+//             <picture class="free__picture">
+//               <source media="(min-width: 768px)" srcset="./images/iphonedesktop.png 1x, ./images/iphonedesktop@2x.png 2x">
+//               <img class="free__img" src="./images/iphone.png"
+//               width="284"
+//               height="179"
+//               alt="Изображение iPhone со 100 юристов по телефону">
+//             </picture>
