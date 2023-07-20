@@ -10,6 +10,14 @@
   padding-left: 0;
   list-style: none;
 }
+// Rahmatulloh's mixin => for texts
+@mixin default-text($mb, $fz:16px, $fw:400, $lh:normal) {
+  margin-top: 0;
+  margin-bottom: $mb;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+}
 // mixin for pseudo elements 
 @mixin pseudo-element ($width,$height) {
   display: inline-block;
