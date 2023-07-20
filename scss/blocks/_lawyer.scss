@@ -1,0 +1,175 @@
+@use "../variables";
+@use "../mixins" as m;
+
+/* Section lawyer styles started */
+.lawyer {
+  padding-bottom: 40px;
+  color: var(--main-black-color);
+}
+
+.lawyer__title {
+  @include m.default-text(20px, 19px, 700);
+  letter-spacing: -0.6px;
+}
+
+.lawyer__list-desktop {
+  display: none;
+  @include m.list-remove;
+}
+
+.lawyer__list-wrapper {
+  max-width: calc(97vw - 34px);
+  margin-left: 16px;
+}
+
+.lawyer__list {
+  @include m.list-remove;
+}
+
+.slick-track {
+  display: flex;
+  column-gap: 10px;
+}
+
+.lawyer__item {
+  display: flex !important;
+  flex-direction: column;
+  max-width: 280px;
+  min-height: 401px;
+  width: 100% !important;
+  padding: 20px;
+  flex-shrink: 0;
+  border: 1px solid #2f2b4326;
+  border-radius: 20px;
+}
+
+.lawyer__subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &::before {
+    margin-right: 15px;
+    @include m.pseudo-element(23px, 20px);
+    background-image: url("../../images/stroller.svg");
+  }
+}
+
+.lawyer__subtitle-wrapper--plug::before {
+  background-image: url("../../images/plug.svg");
+}
+
+.lawyer__subtitle {
+  @include m.default-text(0, 14px, 600);
+  padding-bottom: 5px;
+  border-bottom: 1px solid #33836e;
+}
+
+.lawyer__desc {
+  @include m.default-text(0, 12px, $lh:18px);
+  color: #2f2b43b3;
+}
+
+@include m.media(375px) {
+  .lawyer__title {
+    font-size: 20px;
+  }
+}
+@include m.media(768px) {
+  .lawyer {
+    padding-bottom: 60px;
+  }
+  
+  .lawyer__title {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  
+  .lawyer__list-wrapper {
+    max-width: calc(98vw - 34px);
+    margin-left: 20px;
+  }
+  
+  .lawyer__item {
+    max-width: 400px;
+    min-height: 325px;
+  }
+  
+  .lawyer__subtitle {
+    font-size: 15px;
+  }
+  
+  .lawyer__desc {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@include m.media(1024px) {
+  .lawyer {
+    padding-bottom: 80px;
+  }
+
+  .lawyer__list-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .lawyer__list {
+    display: none;
+  }
+
+  .lawyer__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .lawyer__item {
+    max-width: calc(50% - 10px);
+    min-height: 289px;
+  }
+
+  .lawyer__subtitle--building::before {
+    width: 15px;
+    height: 24px;
+    background-image: url("../../images/building.svg");
+  }
+
+  .lawyer__subtitle--cash::before {
+    width: 24px;
+    background-image: url("../../images/cash.svg");
+  }
+  
+  .lawyer__subtitle--location::before {
+    width: 18px;
+    height: 26px;
+    background-image: url("../../images/location.svg");
+  }
+  
+  .lawyer__subtitle--suitcase::before {
+    width: 22px;
+    height: 24px;
+    background-image: url("../../images/suitcase.svg");
+  }
+  
+  .lawyer__subtitle--bank::before {
+    height: 19px;
+    background-image: url("../../images/bank.svg");
+  }
+
+  .lawyer__subtitle--people::before {
+    width: 24px;
+    height: 21px;
+    background-image: url("../../images/peoplesvg.svg");
+  }
+
+  .lawyer__subtitle {
+    font-size: 16px;
+  }
+  
+  .lawyer__desc {
+    font-size: 14px;
+    line-height: 21px;
+  } 
+}
+/* Section lawyer styles finished */
