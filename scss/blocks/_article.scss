@@ -1,0 +1,79 @@
+@use "../mixins" as m;
+.site-article__wrapper {
+  z-index: 5;
+  padding: 30px 30px 76px;
+  border-radius: 20px;
+  background-image: url("/images/articlebgimg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, left bottom;
+  background-size: 200px 130px, 170px 120px;
+  background-color: var(--main-green-color);
+}
+.site-article__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: var(--main-semi-bold-fw);
+  font-size: 14px;
+  line-height: normal;
+  color: var(--main-white-color);
+}
+.site-article__phone-num {
+  display: inline-block;
+  margin-bottom: 36px;
+  font-size: 26px;
+  font-weight: var(--main-bold-fw);
+  line-height: normal;
+  letter-spacing: -1.08px;
+  color: var(--main-white-color);
+  text-decoration: none;
+}
+.site-article__img-wrap {
+}
+.site-article__desc {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight:var(--main-semi-bold-fw);
+  font-size: 11px;
+  line-height: normal;
+  color: var(--main-white-color);
+  text-align: end;
+}
+.site-article__img {
+  max-width: 121px;
+  width: 100%;
+  margin-left: auto;
+}
+@include m.media (360px) {
+  .site-article__title {
+    font-size: 16px;
+  }
+  .site-article__phone-num {
+    font-size: 30px;
+  }
+  .site-article__desc {
+    font-size: 13px;
+  }
+  .site-article__img {
+    max-width: 161px;
+    width: 100%;
+  }
+}
+@include m.media (390px) {
+  .site-article__wrapper {
+    background-size: 288px 192px, 250px 172px;
+    background-position: left bottom;
+  }
+  .site-article__title {
+    font-size: 18px;
+  }
+  .site-article__phone-num {
+    font-size: 36px;
+  }
+  .site-article__desc {
+    font-size: 14px;
+  }
+  .site-article__img {
+    max-width: 181px;
+    width: 100%;
+  }
+}
