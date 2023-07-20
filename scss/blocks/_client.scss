@@ -1,60 +1,202 @@
 @use "../mixins" as m;
 @use "../variables" as v;
-
-// .client {
-// }
+.client {
+    padding: 15px;
+}
 .client__inner {
     @include m.flexbox;
+    justify-content: start;
     flex-direction: column;
+    align-items: center;
 }
 .client__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 15px;
     color: var(--base-black);
     font-family: var(--main-font-family);
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: -0.96px;
+    letter-spacing: -0.6px;
+    // text-align: start;
 }
 .client__list-wrap {
-    max-width: 85vw;
+    position: relative;
+    max-width: 92vw;
     width: 100%;
-    margin: 0 auto;
+    // @include m.flexbox;
+    // margin: 0 auto;
 }
 .client__list {
-    @include m.flexbox;
+    @include m.flexbox(start, center);
     flex-direction: row;
     @include m.list-remove;
 }
 .client__item {
+    display: flex !important;
     max-width: 280px;
     width: 100%;
+    min-height: 366px;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    // align-items: center;
+    border: 1px solid var(--gray-borders);
+    flex-direction: column;
 }
-// .client__name-box {
-
-// }
+.client__item:not(:last-child) {
+    margin-right: 10px;
+}
+.client__name-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.client__name-parent::before {
+    margin-right: 15px;
+    background-image: url("/images/user.svg");
+    @include m.pseudo-element(50px, 50px);
+}
 .client__name {
     margin: 0;
     color: var(--base-black);
     font-family: var(--main-font-family);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 .client__time {
+    margin: 0;
     color: var(--gray-medium);
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-// .client__idea-box {
-// }
-// .client__idea {
-// }
-// .client__questions {
-// }
-// .client__idea-sec {
-// }
+.client__idea-box {
+    flex-grow: 1;
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.client__idea {
+    font-family: var(--main-font-family);
+    max-width: 260px;
+    width: 100%;
+    flex-grow: 1;
+    margin: 0;
+    color: var(--base-black);
+    font-size: 14px;
+    line-height: 22.4px;
+}
+.client__last-parent {
+    flex-grow: 1;
+}
+.client__questions {
+    margin: 0;
+    margin-bottom: 12px;
+    color: var(--gray-medium);
+    font-family: var(--main-font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.client__idea-sec {
+    color: var(--green);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+.client__button-sec {
+    transform: rotate(180deg);
+}
+.client__button:active {
+    transform: rotate(180deg);
+}
+/* width 375px */
+@include m.media(375px) {
+    .client__item {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+@include m.media(1200px) {
+    .client__item {
+        display: flex !important;
+        max-width: 367px;
+        width: 100%;
+        min-height: 421px;
+        height: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        // align-items: center;
+        border: 1px solid var(--gray-borders);
+        flex-direction: column;
+    }
+    .client__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .client__inner {
+        @include m.flexbox;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+    }
+    .client__title {
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.96px;
+    }
+    .client__name {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .client__time {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .client__idea-box {
+        max-width: 307px;
+        width: 100%;
+    }
+    .client__idea {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.6px;
+    }
+    .client__idea-sec {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height:24px;
+    }
+    .client__name-parent{
+        margin-bottom: 24px;
+    }
+    }
+@include m.media(1440px) {
+    .client {
+        padding: 0 149px;
+    }
+}
