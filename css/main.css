@@ -191,12 +191,7 @@ select { /* 1 */
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
+
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -279,17 +274,10 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -337,7 +325,6 @@ template {
   --main-bold-fw: 700;
   --main-semi-bold-fw: 600;
   --green: #33836e;
-  --main-black-color: #140a32;
   --main-white-color: #fff;
   --base-black:#140a32;
   --gray-medium:#2f2b4380;
@@ -689,4 +676,4 @@ main {
   .client {
     padding: 0 149px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
