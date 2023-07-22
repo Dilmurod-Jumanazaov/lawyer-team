@@ -2,9 +2,14 @@
   --main-font-family: "Open Sans", "Arial", sans-serif;
   --main-bold-fw: 700; 
   --main-semi-bold-fw: 600;
-  --main-green-color: #33836e;
+  --green: #33836e;
   --main-black-color: #140a32;
   --main-white-color: #fff;
+  --base-black:#140a32;
+  --gray-medium:#2f2b4380;
+  --gray-borders:#2f2b4326;
+  --gray-background: #2f2b430a;
+  
 }
 // local variables
 $font-family: var(--main-font-family);

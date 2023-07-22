@@ -15,6 +15,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: v.$font-family;
+  overflow-x: hidden;
 }
 main {
   flex-grow: 1;

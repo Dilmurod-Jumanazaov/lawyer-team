@@ -4,124 +4,247 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
   <title>Lawyer site</title>
 </head>
 <body>
-  <!-- site header started -->
-  <header class="site-header">
-    <div class="container">
-      <div class="site-header__wrapper">
-        <div class="site-header__top">
-          <a href="index.html" class="logo">
-            <img src="./images/sitelogo.svg" alt="site's logo">
-          </a>
-          <form class="site-header__form form" action="#" method="GET">
-            <label class="form__label">
-              <input class="form__label" name="user_search" aria-label="search" type="search" placeholder="Я хочу найти...">
-            </label>
-          </form>
-          <a href="#" class="site-header__send-question">
-            Задать вопрос
-          </a>
-          <div class="site-header__contact">
-            <a class="site-header__contact-tel" href="+88003029270">
-              8 800 302-92-70
-            </a>
-            <p class="site-header__contact-desc">
-              Бесплатный звонок юристу 24/7
-            </p>
-          </div>
-        </div>
-        <div class="site-header__bottom">
-          <ul class="site-header__call-list">
-            <li class="site-header__call-item">
-              <a class="site-header__call-book" href="#">
-                Заказать звонок
-              </a>
-            </li>
-            <li class="site-header__call-item">
-              <a class="site-header__call-telegram" href="#">
-                Telegram
-              </a>
-            </li>
-          </ul>
-          <nav class="site-header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Вопросы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Наши юристы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Статьи</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="site-header__register" href="#">
-            Вход / Регистрация
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- site header end -->
-  <!-- site main started -->
   <main class="site-main">
-    <!-- hero section started -->
-    <section class="site-hero hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <div class="hero__link-wrapper">
-            <a class="hero__link" href="#">
-              Главная
-            </a>
-            <a class="hero__link" href="#">
-              Горячая линия
-            </a>
-          </div>
-          <div class="hero__content">
-            <h1 class="hero__title">
-              Горячая линия по оказанию юридической помощи онлайн
-            </h1>
-            <p class="hero__desc">
-              Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «100 Юристов», вы можете рассчитывать на прозрачные, понятные условия сотрудничества
-            </p>
-          </div>
-          <a href="#" class="hero__send-question">
-            Задать вопрос
-          </a>
-          <div class="hero__contact">
-            <a class="hero__contact-tel" href="+88003029270">
-              8 800 302-92-70
-            </a>
-            <p class="hero__contact-desc">
-              Бесплатный звонок юристу 24/7
-            </p>
-          </div>
-          <ul class="hero__list">
-            <li class="hero__item">
-              Круглосуточно
+    <section class="client">
+      <div class="client__inner">
+        <h2 class="client__title">
+          Отзывы наших клиентов
+        </h2>
+        <div class="client__list-wrap">
+
+          <ul class="client__list">
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
             </li>
-            <li class="hero__item">
-              Бесплатно
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Спасибо огромное за грамотную помощь. Ответили очень быстро, проконсультировали, подсказали и самое
+                  главное помогли в моей ситуации. Высоко квалифицированный специалист, спасибо
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
             </li>
-            <li class="hero__item">
-              Конфиденциально
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
             </li>
-            <li class="hero__item">
-              Быстро
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
+            </li>
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
+            </li>
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
+            </li>
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
+            </li>
+
+            <li class="client__item">
+              <div class="client__name-parent">
+                <div class="client__name-box">
+                  <h3 class="client__name">
+                    Вадим
+                  </h3>
+                  <time class="client__time" datetime="2023-07-18 10:00">
+                    02 июля 2023
+                  </time>
+                </div>
+              </div>
+              <div class="client__idea-box">
+                <p class="client__idea">
+                  Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало
+                  намного
+                  легче
+                </p>
+                <div class="client__last-part">
+                  <p class="client__questions">
+                    Вопрос:
+                  </p>
+                  <strong class="client__idea-sec">
+                    Заберут ли меня в случае общей мобилизации на войну если я
+                  </strong>
+                </div>
+              </div>
             </li>
           </ul>
+
         </div>
       </div>
     </section>
+
+  </main>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
     <!-- hero section end -->
     <!-- help section started -->
     <section class="help">
@@ -416,6 +539,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+
   <script src="./js/main.js"></script>
 </body>
 </html>
