@@ -465,9 +465,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   max-width: 175px;
   width: 100%;
   margin-right: 10px;
@@ -480,16 +480,14 @@ main {
   margin-right: 0;
 }
 
-.help__item:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.help__info-box {
+  position: relative;
 }
 
 .help__info-box::before {
+  position: relative;
+  top: 0;
+  left: 0;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -500,32 +498,14 @@ main {
 }
 
 .help__info-box--second::before {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
   background-image: url("/images/reply.svg");
 }
 
 .help__info-box--three::before {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
   background-image: url("/images/chatlines.svg");
 }
 
 .help__info-box--four::before {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
   background-image: url("/images/building.svg");
 }
 
@@ -578,13 +558,12 @@ main {
   }
 }
 .site-article__wrapper {
-  z-index: 5;
   padding: 30px 30px 76px;
   border-radius: 20px;
-  background-image: url("/images/articlebgimg.png");
+  background-image: url("/images/articlebgmobile.png");
   background-repeat: no-repeat;
-  background-position: left bottom, left bottom;
-  background-size: 200px 130px, 170px 120px;
+  background-position: left bottom;
+  background-size: 190px;
   background-color: var(--main-green-color);
 }
 
@@ -612,7 +591,7 @@ main {
   margin-top: 0;
   margin-bottom: 5px;
   font-weight: var(--main-semi-bold-fw);
-  font-size: 11px;
+  font-size: 10px;
   line-height: normal;
   color: var(--main-white-color);
   text-align: end;
@@ -641,8 +620,7 @@ main {
 }
 @media only screen and (min-width: 390px) {
   .site-article__wrapper {
-    background-size: 288px 192px, 250px 172px;
-    background-position: left bottom;
+    background-size: 210px 185px;
   }
   .site-article__title {
     font-size: 18px;
@@ -655,6 +633,73 @@ main {
   }
   .site-article__img {
     max-width: 181px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .site-article__wrapper {
+    padding-top: 38px;
+    background-image: url("/images/articlebg.png");
+    background-size: 320px 200px;
+  }
+  .site-article__desc {
+    font-size: 18px;
+    text-align: center;
+  }
+  .site-article__img {
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .site-article__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-article__title-box {
+    margin-right: 40px;
+  }
+  .site-article__phone-num {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .site-article__wrapper {
+    margin: 0 auto;
+    background-size: 330px 190px;
+  }
+  .site-article__title-box {
+    margin-right: 116px;
+    margin-left: 293px;
+  }
+  .site-article__title {
+    font-size: 24px;
+  }
+  .site-article__phone-num {
+    font-size: 42px;
+  }
+  .site-article__img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .site-article__img {
+    max-width: 260px;
     width: 100%;
   }
 }
