@@ -1,12 +1,11 @@
 @use "../mixins" as m;
 .site-article__wrapper {
-  z-index: 5;
   padding: 30px 30px 76px;
   border-radius: 20px;
-  background-image: url("/images/articlebgimg.png");
+  background-image: url("/images/articlebgmobile.png");
   background-repeat: no-repeat;
-  background-position: left bottom, left bottom;
-  background-size: 200px 130px, 170px 120px;
+  background-position: left bottom;
+  background-size: 190px;
   background-color: var(--main-green-color);
 }
 .site-article__title {
@@ -33,7 +32,7 @@
   margin-top: 0;
   margin-bottom: 5px;
   font-weight:var(--main-semi-bold-fw);
-  font-size: 11px;
+  font-size: 10px;
   line-height: normal;
   color: var(--main-white-color);
   text-align: end;
@@ -60,8 +59,7 @@
 }
 @include m.media (390px) {
   .site-article__wrapper {
-    background-size: 288px 192px, 250px 172px;
-    background-position: left bottom;
+    background-size: 210px 185px;
   }
   .site-article__title {
     font-size: 18px;
@@ -74,6 +72,58 @@
   }
   .site-article__img {
     max-width: 181px;
+    width: 100%;
+  }
+}
+@include m.media (768px) {
+  .site-article__wrapper {
+    padding-top: 38px;
+    background-image: url("/images/articlebg.png");
+    background-size: 320px 200px;
+  }
+  .site-article__desc {
+    font-size: 18px;
+    text-align: center;
+  }
+  .site-article__img {
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@include m.media (1000px) {
+  .site-article__wrapper {
+    @include m.flexbox(center, center);
+  }
+  .site-article__title-box {
+    margin-right: 40px;
+  }
+  .site-article__phone-num {
+    margin-bottom: 0;
+  }
+}
+@include m.media (1200px) {
+  .site-article__wrapper {
+    margin: 0 auto;
+    background-size: 330px 190px;
+  }
+  .site-article__title-box {
+    margin-right: 116px;
+    margin-left: 293px;
+  }
+  .site-article__title {
+    font-size: 24px;
+  }
+  .site-article__phone-num {
+    font-size: 42px;
+  }
+  .site-article__img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .site-article__img {
+    max-width: 260px;
     width: 100%;
   }
 }
