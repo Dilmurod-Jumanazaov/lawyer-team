@@ -147,6 +147,9 @@
   .help {
     padding-bottom: 60px;
   }
+  .help__text {
+    font-size: 16px;
+  }
   .help__item {
     max-width: 275px;
     width: 100%;
@@ -165,6 +168,9 @@
   }
 }
 @include m.media (855px) {
+  .help__text {
+    font-size: 17px;
+  }
   .help__item:nth-child(3) {
     margin-bottom: 10px;
   }

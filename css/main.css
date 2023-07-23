@@ -720,6 +720,9 @@ main {
   .help {
     padding-bottom: 60px;
   }
+  .help__text {
+    font-size: 16px;
+  }
   .help__item {
     max-width: 275px;
     width: 100%;
@@ -738,6 +741,9 @@ main {
   }
 }
 @media only screen and (min-width: 855px) {
+  .help__text {
+    font-size: 17px;
+  }
   .help__item:nth-child(3) {
     margin-bottom: 10px;
   }
@@ -823,7 +829,7 @@ main {
 }
 @media only screen and (min-width: 768px) {
   .site-article__wrapper {
-    padding-top: 38px;
+    padding-top: 30px;
     background-image: url("/images/articlebg.png");
     background-size: 320px 200px;
   }
@@ -904,12 +910,26 @@ main {
 }
 
 .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
 .services__item {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 10px;
   padding: 20px;
   border: 1px solid rgba(47, 43, 67, 0.15);
@@ -970,6 +990,7 @@ main {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
 /* Section lawyer styles started */
 .lawyer {
   padding-bottom: 40px;
@@ -1376,12 +1397,72 @@ main {
     margin-right: 20px;
   }
   .client__inner {
+=======
+@media only screen and (min-width: 590px) {
+  .services__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .services__title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .services__item {
+    max-width: 275px;
+    width: 100%;
+  }
+  .services__item:first-child {
+    margin-right: 10px;
+  }
+  .services__item:nth-child(3) {
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 885px) {
+  .services__title {
+    font-size: 32px;
+  }
+  .services__item {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .services__item:nth-child(1) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .services__item:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .services__item:nth-child(3) {
+    margin-right: 10px;
+  }
+  .services__desc {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .services__title {
+    text-align: start;
+  }
+  .services__item {
+    max-width: 560px;
+    width: 100%;
+  }
+  .services__text-box {
+>>>>>>> services
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+<<<<<<< HEAD
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1588,3 +1669,13 @@ main {
 }
 
 
+=======
+    max-width: 350px;
+    width: 100%;
+  }
+  .services__text-box::before {
+    width: 110px;
+    height: 110px;
+  }
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> services
